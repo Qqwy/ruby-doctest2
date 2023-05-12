@@ -23,7 +23,7 @@ class ClassWithDoctests
 
   # Example of doctest on single line
   #
-  # >> ClassWithDoctests.c # => 'c'
+  # >> ClassWithDoctests.c #=> 'c'
   def self.c
     'c'
   end

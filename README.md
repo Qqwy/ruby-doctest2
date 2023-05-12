@@ -80,7 +80,7 @@ any setup/cleanup logic can be added in exactly the same way as for normal test 
 
 Doctest2 extracts any comments starting with `>>` or `=>` (and any amount of whitespace).
 A doctest consists of one or multiple comment lines starting with `>>`.
-The outcome of evaluating these lines is compared (using `==`) to evaluating the single comment line starting with `=>`.
+The outcome of evaluating these lines is compared (using `==`) to evaluating the single comment starting with `=>` (which can be on the next line or at the end of the last code line):
 
 ```ruby
 class User
@@ -102,15 +102,13 @@ class User
   # If the last name is not set, only the first name will be used
   # without extra whitespace
   #
-  #   >> adam = User.new(first_name: "Adam")
-  #   >> adam.display_name
-  #   => "Adam"
+  #   >> User.new(first_name: "Adam")
+  #   >> adam.display_name #=> "Adam"
   def display_name
     "#{first_name} #{last_name}".strip
   end
 end
 ```
-
 
 ## Development
 
