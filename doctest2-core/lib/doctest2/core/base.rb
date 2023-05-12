@@ -6,6 +6,7 @@ module Doctest2
         self.new(str).analyze
       end
 
+      CODE_AND_RESULT_REGEXP   = /^\s*#\s*>>\s*(?<code>.*)?#\s*=>\s*(?<result>.*)$/
       CODE_REGEXP   = /^\s*#\s*>>\s*(?<code>.*)/
       RESULT_REGEXP = /#\s*=>\s*(?<result>.*)$/
 
@@ -25,6 +26,11 @@ module Doctest2
       def analyze
         @str.lines.each.with_index do |line, index|
           case line
+          when CODE_AND_RESULT_REGEXP
+            code = Regexp.last_match['code']
+            result = Regexp.last_match['result']
+            handle_code(code)
+            handle_result(result, index)
           when CODE_REGEXP
             handle_code(Regexp.last_match['code'])
           when RESULT_REGEXP

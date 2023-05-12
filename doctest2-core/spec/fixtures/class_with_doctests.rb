@@ -21,4 +21,10 @@ class ClassWithDoctests
     'b'
   end
 
+  # Example of doctest on single line
+  #
+  # >> ClassWithDoctests.c # => 'c'
+  def self.c
+    'c'
+  end
 end
