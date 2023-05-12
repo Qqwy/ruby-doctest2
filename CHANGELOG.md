@@ -1,3 +1,9 @@
+# 0.9.2
+Improved Rubygems.org descriptions
+
+# 0.9.1
+Improved Rubygems.org descriptions
+
 # 0.9.0
 First release. Contains all the features of `doctest-core`/`doctest-rspec`,
 with the following improvements:
