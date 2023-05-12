@@ -9,5 +9,5 @@ gem "rake", "~> 13.0"
 
 gem "rubocop", "~> 1.21"
 
-# TODO: for temporary easy local development
-gem 'doctest2-core', path: "../doctest2-core"
+# for temporary easy local development
+# gem 'doctest2-core', path: "../doctest2-core"
