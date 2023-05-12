@@ -16,4 +16,4 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
-      - run: just test
+      - run: just setup_and_test
