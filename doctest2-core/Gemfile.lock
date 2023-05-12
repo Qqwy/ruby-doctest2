@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    doctest2-core (0.1.0)
+    doctest2-core (0.9.0)
 
 GEM
   remote: https://rubygems.org/
