@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["qqwy@gmx.com"]
 
   spec.summary = "Forms the basis of extracting and running doctests (documentation tests). Core used by test-framework-specific gems."
-  spec.description = "Extract doctests from Ruby files."
+  spec.description = "Extract and run doctests from Ruby files. Core used by test-framework-specific gems."
   spec.homepage = "https://github.com/Qqwy/ruby-doctest2"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
