@@ -1,19 +1,15 @@
 PATH
-  remote: ../doctest2-core
-  specs:
-    doctest2-core (0.1.0)
-
-PATH
   remote: .
   specs:
-    doctest2-rspec (0.1.0)
-      doctest2-core (~> 0.1.0)
+    doctest2-minitest (0.9.2)
+      doctest2-core (~> 0.9.0)
       minitest (~> 5.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
+    doctest2-core (0.9.1)
     json (2.6.3)
     minitest (5.18.0)
     parallel (1.23.0)
@@ -42,8 +38,7 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
-  doctest2-core!
-  doctest2-rspec!
+  doctest2-minitest!
   rake (~> 13.0)
   rubocop (~> 1.21)
 

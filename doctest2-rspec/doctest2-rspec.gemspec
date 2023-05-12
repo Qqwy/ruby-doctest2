@@ -38,6 +38,6 @@ Gem::Specification.new do |spec|
   # guide at: https://bundler.io/guides/creating_gem.html
 
   # spec.add_dependency "doctest2-core", path: "../doctest2-core"
-  spec.add_dependency "doctest2-core", "~> 0.1.0"
+  spec.add_dependency "doctest2-core", "~> 0.9.0"
   spec.add_dependency "rspec", "~> 3.0"
 end
