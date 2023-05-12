@@ -1,0 +1,19 @@
+name: Tests
+on: push
+
+jobs:
+  verify:
+    name: Tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['2.6', '2.7', '3.0', '3.1', '3.2']
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: extractions/setup-just@v1
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true
+      - run: just test
