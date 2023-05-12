@@ -1,8 +1,13 @@
 # Doctest2
 
-Documentation testing in Ruby.
+The best kind of documentation is documentation that can never go out of date!
 
-This is split up in multiple gems, so you only pull in what you need:
+Doctest2 adds documentation testing capabilities to your existing test suite:
+The code examples in your documentation are now automatically turned into tests!
+
+Doctest2 integrates with your existing test suite, making it a breeze to add to your project.
+
+Doctest2 is split up in multiple gems, so you only pull in what you need:
 - [doctest2-core](): Common core used by the other gems. Does the heavy lifting of extracting and evaluating doctests.
 - [doctest2-rspec](): Wrapper to run doctests as part of a [RSpec]() test suite.
 - [doctest2-minitest](): Wrapper to run doctests as part of a [Minitest]() test suite.
@@ -129,3 +134,11 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/Qqwy/r
 ## License
 
 The gems are available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Attribution
+
+This work is based on the original [doctest-core](https://rubygems.org/gems/doctest-core) and related gems, which have not been updated since 2014 and for which the repo is no longer available.
+
+Alternative Ruby libraries for doctesting exist ([yard-doctest](https://rubygems.org/gems/yard-doctest), [rdoctest](https://rubygems.org/gems/rdoctest), [rubydoctest](https://rubygems.org/gems/rubydoctest), [dest](https://github.com/Reizar/Dest)), but none of them integrates with your normal test suite, instead using their own dedicated test runner.
+
+The syntax and ergonomics of doctest2 takes inspiration from [Elixir's doctests](https://hexdocs.pm/ex_unit/1.12/ExUnit.DocTest.html).
