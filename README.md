@@ -15,14 +15,32 @@ Doctest2 is split up in multiple gems, so you only pull in what you need:
 ## Installation
 
 ### With RSpec:
-1. Add the `doctest2-rspec` gem to your Gemfile or run `bundle add doctest2-rspec`.
+1. Add the `doctest2-rspec` gem to your Gemfile:
+
+```ruby
+group :test do
+  # ...
+
+  gem 'doctest2-rspec, '~> 0.9.0', require: false
+end
+```
+
 2. Include the extension by adding `require 'doctest2/rspec'` in your `spec/spec_helper.rb` (or on top of your individual RSpec test files).
 
 Now you have access to the `doctest` class-method inside `describe` blocks.
 
 
 ### With Minitest
-1. Add the `doctest2-minitest` gem to your Gemfile or run `bundle add doctest2-rspec`.
+1. Add the `doctest2-minitest` gem to your Gemfile:
+
+```ruby
+group :test do
+  # ...
+
+  gem 'doctest2-minitest', '~> 0.9.0', require: false
+end
+```
+
 2. Include the extension module in the unit test base class:
 
 In `test/test_helper.rb` (before the `require 'minitest/autorun'` line, if it exists):
