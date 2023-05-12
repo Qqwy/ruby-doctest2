@@ -3,7 +3,7 @@
 require_relative "lib/doctest2/minitest/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "doctest2-rspec"
+  spec.name = "doctest2-minitest"
   spec.version = Doctest2::Minitest::VERSION
   spec.authors = ["Qqwy/Marten"]
   spec.email = ["qqwy@gmx.com"]
