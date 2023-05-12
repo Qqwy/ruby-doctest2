@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Forms the basis of extracting and running doctests (documentation tests). Core used by test-framework-specific gems."
   spec.description = "Extract doctests from Ruby files."
-  spec.homepage = "https://github.com/Qqwy/ruby-doctest2-core/"
+  spec.homepage = "https://github.com/Qqwy/ruby-doctest2"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 

@@ -98,7 +98,7 @@ class User
 
   # Presents the full name of the user.
   #
-  # ## Usage:
+  # Usage:
   #
   #   >> bob = User.new(first_name: "Bob", last_name: "Ross")
   #   >> bob.display_name
